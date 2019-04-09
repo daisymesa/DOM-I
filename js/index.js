@@ -41,6 +41,7 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+
 //Update the navigation links
 let navItems= document.querySelectorAll("nav a");
 navItems[0].textContent = siteContent.nav["nav-item-1"];
@@ -59,3 +60,19 @@ ctaButton.textContent = siteContent.cta["button"];
 
 let ctaImage= document.querySelector("#cta-img");
 ctaImage.src = siteContent.cta["img-src"];
+
+
+//Update the top-content "Features" section 
+let topContentHeaderFeatures= document.querySelectorAll(".main-content .top-content h4");
+topContentHeaderFeatures[0].textContent = siteContent["main-content"]["features-h4"];
+
+let topContentTextFeatures= document.querySelectorAll(".main-content .top-content p");
+topContentTextFeatures[0].textContent = siteContent["main-content"]["features-content"];
+
+
+//Update the top-content "About" section 
+let topContentAbout= document.querySelectorAll(".main-content .top-content h4");
+topContentAbout[1].textContent = siteContent["main-content"]["about-h4"];
+
+let topContentTextAbout= document.querySelectorAll(".main-content .top-content p");
+topContentTextAbout[1].textContent = siteContent["main-content"]["about-content"];
