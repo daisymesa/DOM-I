@@ -104,3 +104,13 @@ bottomContentHeaderVision[2].textContent = siteContent["main-content"]["vision-h
 
 let bottomContentTextVision= document.querySelectorAll(".main-content .bottom-content p");
 bottomContentTextVision[2].textContent = siteContent["main-content"]["vision-content"];
+
+
+//Update the contact section
+let contactSectionHeader= document.querySelectorAll(".contact h4");
+contactSectionHeader[0].textContent = siteContent["contact"]["contact-h4"];
+
+let contactSectionDetails= document.querySelectorAll(".contact p");
+contactSectionDetails[0].textContent = siteContent["contact"]["address"];
+contactSectionDetails[1].textContent = siteContent["contact"]["phone"];
+contactSectionDetails[2].textContent = siteContent["contact"]["email"];
